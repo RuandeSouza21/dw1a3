@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/fonts.css" rel="stylesheet">
+    <link href="/styles/media.css" rel="stylesheet">
+    <title>FUT News</title>
+    <link rel="icon" href="./components/images/premio.png" size=“16x16" >
+</head>
+<body>
+<header>
+    <div>
+        <h1>FUT</h1>
+        <h1>News</h1>
+    </div>
+    <ul>
+        <a href="#"><li>Início</li></a>
+        <a href="#"><li>Noticias</li></a>
+        <a href="#"><li>Sobre</li></a>
+        <a href="#"><li>Contato</li></a>
+        <a href="#" id="inscreva-se-btn"><li>Já tem uma conta?</li></a>
+    </ul>
+</header>
+
+<main>
+    <aside>
+        <h2><span>Inscreva-se agora</span></h2>
+        <h2>na FUT News</h2>
+        <p>
+            A Fut News é o maior site de notícias futebolísticas na atuliadade, sempre trazendo informações recentes e relevantes sobre seus times e jogadores favoritos. Inscreva-se agora e seja um dos primeiros a saber de todas as notícias do esporte mais acompanhados pelos brasileiros.
+        </p>
+        <form>
+            <input type="text" placeholder="Nome">
+            <input type="number" id="idade" name="quant" min="0" max="150" step="1" placeholder="Idade">
+            <input type="tel" class="form-control" id="phone" name="phone" autocomplete="off"
+                   placeholder="Telefone: (99) 9999-9999"
+                   pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})"
+                   title="Número de telefone precisa ser no formato (99) 9999-9999"/>
+            <input type="email" placeholder="Email">
+            <input type="submit" value="Enviar >">
+        </form>
+    </aside>
+
+    <article>
+        <img src="./components/images/liga.png" alt="champions-league">
+    </article>
+</main>
+</body>
+</html>
