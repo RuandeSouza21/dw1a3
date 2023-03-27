@@ -25,7 +25,7 @@ input[type="checkbox"]:before{
     padding: 10px 20px;
 }
 
-input[type="checkbox"]:checked :before{
+input[type="checkbox"]:checked:before{
     content: "Light";
     color: #000;
     background: #fff;
