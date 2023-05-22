@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+section{
+    width: 450px;
+    height: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+header{
+    width: 320px;
+    height: 320px;
+    background: blue;
+    margin: auto;
+}
+
+p{
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #000000;
+}
+
+div{
+    width: 80%;
+    height: 270px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+div:nth-of-type(1){
+    height: 50px;
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+select{
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    text-transform: inherit;
+}
+
+label{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px auto;
+}
+
+label span{
+    width: 60px;
+    font-weight: bold;
+}
+
+input{
+    width: 90%;
+}
