@@ -1,0 +1,41 @@
+body {
+    background: #ffffd9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fffff2;
+  border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    width: 70%;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    background-color: #90ee90;
+    border-radius: 10px;
+}
+
+.errorInput {
+    border: 2px solid #ff4040 !important;
+}
+
+
