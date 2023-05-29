@@ -53,6 +53,10 @@ a:hover{
     color: #ffbf00;
 }
 
+a:visited{
+    color: white;
+}
+
 img{
     width: 50px;
 }
