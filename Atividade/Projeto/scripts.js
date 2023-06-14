@@ -10,8 +10,6 @@ const state = {
     currentCol: 0,
 };
 
-console.log(state.secret);
-
 function updateGrid() {
     for (let i = 0; i < state.grid.length; i++){
         for (let j = 0; j < state.grid[i].length; j++){
@@ -133,6 +131,7 @@ function startup() {
      drawGrid(game);
 
      registerKeyboardEvents();
+    console.log(state.secret);
 }
 
 startup();
