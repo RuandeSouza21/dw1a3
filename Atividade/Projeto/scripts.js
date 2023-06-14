@@ -1,6 +1,5 @@
 const dictionary = ['custa', 'custo', 'terra', 'plano', 'muito', 'abala', 'areia'];
 
-console.log(state.secret);
 
 const state = {
     secret: dictionary[Math.floor(Math.random() * dictionary.length)],
@@ -10,6 +9,8 @@ const state = {
     currentRow: 0,
     currentCol: 0,
 };
+
+console.log(state.secret);
 
 function updateGrid() {
     for (let i = 0; i < state.grid.length; i++){
