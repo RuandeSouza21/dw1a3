@@ -1,5 +1,7 @@
 const dictionary = ['custa', 'custo', 'terra', 'plano', 'muito', 'abala', 'areia'];
 
+console.log(state.secret);
+
 const state = {
     secret: dictionary[Math.floor(Math.random() * dictionary.length)],
     grid: Array(6)
