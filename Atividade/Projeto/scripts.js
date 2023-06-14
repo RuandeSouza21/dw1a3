@@ -1,4 +1,4 @@
-const dictionary = ['custa', 'custo', 'terra', 'plano', 'muito', 'moita', 'areia'];
+const dictionary = ['custa', 'custo', 'terra', 'plano', 'muito', 'abala', 'areia'];
 
 const state = {
     secret: dictionary[Math.floor(Math.random() * dictionary.length)],
