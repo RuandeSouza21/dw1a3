@@ -1,5 +1,6 @@
-html, body {
+body {
     background: var(--corpo);
+    text-align: center;
 }
 
 :root{
@@ -10,67 +11,90 @@ html, body {
 }
 
 
-#game {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 600px;
+#title {
+    color: white;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 3rem;
+      margin-bottom: 0;
+      position: relative;
 }
 
-.grid {
-    display: grid;
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: repeat(5, auto);
+#board {
+    width: 350px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.box {
+.tile {
+    /* Box */
+    border: 2px solid var(--vazio);
     width: 60px;
     height: 60px;
-    border: 2px solid var(--vazio);
-    margin: 4px;
+    margin: 2.5px;
+    border-radius:10px;
+
     color: white;
-    text-transform: uppercase;
-    display: grid;
-    place-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.4rem;
-    border-radius: 10px;
 }
 
-.box.empty {
-    background: var(--vazio);
-}
-
-.box.wrong {
-    background: var(--errado);
-}
-
-.box.right {
+.correct {
     background: var(--certo);
 }
 
-.animated {
-    animation: flip 0.5s ease;
+.present {
+    background: var(--errado);
 }
 
-@keyframes flip {
-    0% {
-        transform: scaleY(1);
-    }
-    50% {
-        transform: scaleY(0);
-    }
-    100% {
-        transform: scaleY(1);
-    }
+.absent {
+    background: var(--vazio);
 }
 
-.title {
-  color: white;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 3rem;
-  margin-bottom: 0;
-  position: relative;
+
+.keyboard-row {
+    width: 400px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.key-tile {
+    width: 36px;
+    height: 40px;
+    margin: 1px;
+    border: 1px solid var(--vazio);
+    border-radius: 10px;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.enter-key-tile {
+    width: 76px;
+    height: 40px;
+    margin: 1px;
+    border: 1px solid var(--vazio);
+    border-radius: 10px;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
